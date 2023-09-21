@@ -24,7 +24,7 @@ export default function Sections() {
       </section>
       <section id="section5" >
         <Projects></Projects>
-      </section>
+      </section><br/>
       <section id="section6" >
        <Contact></Contact>
       </section>

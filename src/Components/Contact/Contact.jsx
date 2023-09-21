@@ -10,7 +10,7 @@ export default function Contact() {
     <div>
       <Stack>
      <Typography variant='h3' textAlign={'center'}>
-        Feel Free to Contact Me.
+        Let's Make Something Great Together!
       </Typography>
       <hr style={{width:'20%',color:'green',border:'2px solid green',alignSelf:'center'}} /></Stack><br/>
 {/* 
@@ -31,7 +31,7 @@ export default function Contact() {
       <Typography textAlign={'center'} variant='h4' fontWeight={'bold'} color={'white'} >GET IN TOUCH</Typography>
       <Stack direction={'row'} spacing={1}  paddingLeft={'39%'}>
         <Instagram sx={{color:'#d62976'}}/>
-        <Google sx={{color:'#3cba54'}}/>
+        <Google sx={{color:'gold'}}/>
         <GitHub/>
         <LinkedIn sx={{color:'blue'}}/>
       </Stack>
