@@ -1,6 +1,6 @@
 import { Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material'
 import React from 'react'
-import {DiHtml5,DiCss3Full,DiBootstrap,DiReact,DiJavascript, DiJsBadge ,} from 'react-icons/di'
+import {DiHtml5,DiCss3Full,DiBootstrap,DiReact,DiJavascript, DiJsBadge, DiFirebase ,} from 'react-icons/di'
 import ProjectsDesign from './ProjectsDesign'
 export default function Projects() {
     const projects=[
@@ -31,15 +31,17 @@ export default function Projects() {
         Technology3:<DiJsBadge color='gold' />,
         Technology4:<DiBootstrap color='#5ebac4'/>,
     },
+    
     {
         date:'2023',
-        project:'Todo-App',
+        project:'E-Commerce Store',
         DevelopedAt:'PieCyfer',
         Technology1:<DiHtml5 color='orange'/>,
         Technology2:<DiCss3Full color='blue' />,
         Technology3:<DiJsBadge color='gold' />,
         Technology4:<DiReact color='aqua'/>,
-    },
+        Technology5:<DiFirebase color='orange'/>
+    }
 ]
   return (
     <div >
@@ -58,16 +60,16 @@ export default function Projects() {
             <TableRow>
                 
                 <TableCell width={'25%'}>
-                <Typography color={'gold'}  variant='h5'>   Year</Typography > 
+                <Typography color={'gold'}  variant='h5' fontWeight={'bold'}>   Year</Typography > 
                 </TableCell>
                 <TableCell  width={'25%'}>
-                <Typography color={'gold'}  variant='h5'>  Project </Typography>
+                <Typography color={'gold'}  variant='h5' fontWeight={'bold'}>  Project </Typography>
                 </TableCell>
                 <TableCell  width={'25%'}>
-                <Typography color={'gold'} variant='h5'>   Created At </Typography>
+                <Typography color={'gold'} variant='h5' fontWeight={'bold'}>   Created At </Typography>
                     </TableCell>
                 <TableCell  width={'25%'}>
-                <Typography color={'gold'} variant='h5'> Technologies Used </Typography>
+                <Typography color={'gold'} variant='h5' fontWeight={'bold'}> Technologies Used </Typography>
                     </TableCell>
             </TableRow>
         </TableHead>
@@ -82,6 +84,7 @@ export default function Projects() {
                     logo2={data.Technology2}
                     logo3={data.Technology3}
                     logo4={data.Technology4}
+                    logo5={data.Technology5}
                     />
                 )
             })}

@@ -5,7 +5,7 @@ import { Image } from 'react-bootstrap'
 export default function SkillsDesign({id,icon,title,description}) {
   return (
     <div>
-    <Card
+    <Card variant='outlined' 
     sx={{height:'40vh',width:'100%'}}
     
     
@@ -19,9 +19,10 @@ export default function SkillsDesign({id,icon,title,description}) {
         <Typography variant='h5'  color={'gold'} textAlign={'center'} gutterBottom>
             {title}
             </Typography></Stack><br/>
-            <Typography variant='body2' textAlign={'justify'} px={3} >
+            <Typography variant='body2' textAlign={'justify'} px={3} fontWeight={'bold'} >
             {description}</Typography>
         </CardContent>
+        
     </Card>
     </div>
   )

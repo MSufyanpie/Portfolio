@@ -4,7 +4,7 @@ import React from 'react'
 export default function ServicesDesign({id,image,title,description}) {
   return (
     
-        <Card sx={{width:'33%'}}
+        <Card sx={{width:'33%'}} variant='outlined'
         >
             <CardMedia 
             sx={{height:280}}
