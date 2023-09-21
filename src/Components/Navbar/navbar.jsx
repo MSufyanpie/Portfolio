@@ -1,13 +1,20 @@
-import { CatchingPokemonOutlined } from '@mui/icons-material'
+
 import { AppBar, Button, IconButton,  Stack, Toolbar, Typography } from '@mui/material'
 import React from 'react'
 import { Image } from 'react-bootstrap'
-import Aboutme from '../About/Aboutme'
+
 import { Link } from 'react-router-dom'
 
+
 export default function MuiNavbar() {
+    const scrollToSection = (sectionId) => {
+        const section = document.querySelector(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
   return (
-   <AppBar sx={{backgroundColor:'black'}} >
+   <AppBar sx={{backgroundColor:'white'}} >
     <Toolbar   >
         <Typography sx={{flexGrow:1}}>
         <IconButton  >
@@ -15,19 +22,57 @@ export default function MuiNavbar() {
         </IconButton>
         </Typography>
         
-        {/* <Typography variant='h6' sx={{flexGrow:1}}>
-            Muhammad Sufyan
-        </Typography> */}
 
         <Stack spacing={2} direction={'row'}>
-         <Button color='warning'>  <Link to={'http://localhost:5175/About'}  sx={{textDecoration:'none'}} color='inherit'>About</Link></Button> 
-         <Button color='warning'>  <Link sx={{textDecoration:'none'}} color='inherit'>Skills</Link></Button> 
-         <Button color='warning'>  <Link sx={{textDecoration:'none'}} color='inherit'>Projects</Link></Button> 
-         <Button color='warning'>  <Link sx={{textDecoration:'none'}} color='inherit'>Contact Me</Link></Button> 
+
+        <Link 
+        style={{textDecoration:'none'}} 
+        onClick={()=>scrollToSection("#section1")}
+        to={"/#section1"}
+        >
+        <Button >Home</Button></Link>
+
+          <Link  
+          onClick={()=>scrollToSection("#section2")} 
+          style={{textDecoration:'none'}}
+          to={"/#section2"}
+          >
+          <Button >   About
+          </Button></Link> 
+
+          <Link 
+          style={{textDecoration:'none'}}
+          onClick={()=>scrollToSection("#section3")} 
+          to={"/#section3"}
+          >
+            <Button >Services</Button></Link> 
+
+            
+          <Link 
+          style={{textDecoration:'none'}}
+          onClick={()=>scrollToSection("#section4")} 
+          to={"/#section4"}
+          >
+            <Button >Skills</Button></Link> 
+
+           <Link style={{textDecoration:'none'}}
+            onClick={()=>scrollToSection("#section5")} 
+            to={"/#section5"} >
+
+           <Button>Projects</Button></Link> 
+
+
+           <Link style={{textDecoration:'none'}}
+            onClick={()=>scrollToSection("#section6")} 
+            to={"/#section6"}
+           >
+           <Button   >Contact </Button></Link> 
+           <Button variant='contained' color='error'>Hire Me</Button>
+
+           
+           
         </Stack>
     </Toolbar>
    </AppBar>
   )
 }
-
- 
