@@ -16,7 +16,7 @@ export default function Services() {
   
     {
       image:service2,
-      title:'Expert React JS Developer for Custom UI Development',
+      title:'Expert React JS/TS Developer for Custom UI Development',
       description:'I specialize in custom UI development, leveraging my expertise as a front-end React JS developer to create user-friendly websites.',
   },
   {
@@ -33,7 +33,7 @@ export default function Services() {
         What Services I'm Providing
       </Typography>
       <hr style={{width:'20%',color:'green',border:'2px solid green',alignSelf:'center'}} /></Stack><br/>
-      <Grid spacing={3} direction={'row'}  
+      <Grid container spacing={3} direction={'row'}  
       px={10}  >
       {services.map((data,index)=>{
         return(
