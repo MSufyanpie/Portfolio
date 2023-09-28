@@ -19,11 +19,11 @@ export default function SkillsDesign({id,icon,title,description}) {
         <Typography variant='h5'  color={'gold'} textAlign={'center'} gutterBottom>
             {title}
             </Typography></Stack><br/>
-            <Typography variant='body2' textAlign={'justify'} px={3} fontWeight={'bold'} >
+            <Typography  variant='body2' textAlign={'justify'} px={3} fontWeight={'bold'} >
             {description}</Typography>
         </CardContent>
         
-    </Card>
+    </Card><br/>
     </div>
   )
 }

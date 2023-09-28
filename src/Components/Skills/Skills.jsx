@@ -41,7 +41,7 @@ export default function Skills() {
   return (
   <div>
     <Stack>
-      <Typography variant='h3' textAlign={'center'}>
+      <Typography variant='h2' textAlign={'center'} color={'whitesmoke'} fontWeight={'bold'}>
         My Skills
       </Typography>
       <hr style={{width:'20%',color:'green',border:'2px solid green',alignSelf:'center'}} /></Stack><br/>
@@ -65,7 +65,7 @@ export default function Skills() {
         </Grid>
       )
     })}
-    </Grid><br/>
+    </Grid><br/><br/>
   
     </div>
   )

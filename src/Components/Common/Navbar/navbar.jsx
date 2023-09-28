@@ -26,18 +26,18 @@ export default function MuiNavbar() {
         <Stack spacing={2} direction={'row'}>
 
         <Link 
-        style={{textDecoration:'none'}} 
+        style={{textDecoration:'none',}} 
         onClick={()=>scrollToSection("#section1")}
         to={"/#section1"}
         >
-        <Button >Home</Button></Link>
+        <Button sx={{color:'black',fontWeight:'bold'}} >Home</Button></Link>
 
           <Link  
           onClick={()=>scrollToSection("#section2")} 
           style={{textDecoration:'none'}}
           to={"/#section2"}
           >
-          <Button >   About
+          <Button sx={{color:'black',fontWeight:'bold'}} >   About
           </Button></Link> 
 
           <Link 
@@ -45,7 +45,7 @@ export default function MuiNavbar() {
           onClick={()=>scrollToSection("#section3")} 
           to={"/#section3"}
           >
-            <Button >Services</Button></Link> 
+            <Button sx={{color:'black',fontWeight:'bold'}} >Services</Button></Link> 
 
             
           <Link 
@@ -53,21 +53,21 @@ export default function MuiNavbar() {
           onClick={()=>scrollToSection("#section4")} 
           to={"/#section4"}
           >
-            <Button >Skills</Button></Link> 
+            <Button sx={{color:'black',fontWeight:'bold'}} >Skills</Button></Link> 
 
            <Link style={{textDecoration:'none'}}
             onClick={()=>scrollToSection("#section5")} 
             to={"/#section5"} >
 
-           <Button>Projects</Button></Link> 
+           <Button sx={{color:'black',fontWeight:'bold'}}>Projects</Button></Link> 
 
 
            <Link style={{textDecoration:'none'}}
             onClick={()=>scrollToSection("#section6")} 
             to={"/#section6"}
            >
-           <Button   >Contact </Button></Link> 
-           <Button variant='contained' color='error'>Hire Me</Button>
+           <Button  sx={{color:'black',fontWeight:'bold'}} >Contact </Button></Link> 
+           <Button variant='contained' color='error' size='large' sx={{fontWeight:'bold',borderRadius:'50px'}}>Hire Me</Button>
 
            
            

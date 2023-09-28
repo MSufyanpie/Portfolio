@@ -47,11 +47,11 @@ export default function Projects() {
     <div >
         
         <Stack>
-      <Typography variant='h3' textAlign={'center'}>
+      <Typography variant='h2' textAlign={'center'} color={'whitesmoke'} fontWeight={'bold'}>
         My Projects
       </Typography>
       <hr style={{width:'11%',color:'green',border:'2px solid green',alignSelf:'center'}} /></Stack><br/>
-    <Stack px={10}>
+    <Stack px={{xs:4,md:10}}>
     <TableContainer sx={{border:'1px solid #a63243',borderRadius:'10px'}}>
     <Table sx={{}}>
         

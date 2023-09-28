@@ -1,6 +1,6 @@
 import React from 'react'
-import NavBar from '../Navbar/navbar'
-import { Stack, Typography } from '@mui/material'
+import NavBar from '../Common/Navbar/navbar'
+import { Grid, Stack, Typography } from '@mui/material'
 import service1 from '../../assets/service1.jpg'
 import service2 from '../../assets/service2.jpg'
 import service3 from '../../assets/service3.jpg'
@@ -29,11 +29,12 @@ export default function Services() {
   return (
     <div>
       <Stack>
-      <Typography variant='h3' textAlign={'center'}>
+      <Typography variant='h3' textAlign={'center'} color={'whitesmoke'} fontWeight={'bold'}>
         What Services I'm Providing
       </Typography>
       <hr style={{width:'20%',color:'green',border:'2px solid green',alignSelf:'center'}} /></Stack><br/>
-      <Stack spacing={3} direction={'row'} px={10}  >
+      <Grid spacing={3} direction={'row'}  
+      px={10}  >
       {services.map((data,index)=>{
         return(
           <ServicesDesign 
@@ -46,7 +47,7 @@ export default function Services() {
           
         )
       })}
-      </Stack><br/>
+      </Grid><br/><br/>
       </div>
   )
 }

@@ -1,34 +1,41 @@
 import React from 'react'
-import NavBar from '../Navbar/navbar'
+import NavBar from '../Common/Navbar/navbar'
 import { Box, Button, Stack, Typography } from '@mui/material'
+import { Image } from 'react-bootstrap'
 
 
 
 export default function Aboutme() {
   return (
     <div>
-  <Stack spacing={5}>
-    <Typography variant='h3'  textAlign={'center'}>About Me</Typography>
-    <hr style={{width:'10%',alignSelf:'center',color:'green',border:'2px solid green'}} />
-    <Stack px={10}>
-    <Box width={'600px'}>
-    <Typography    variant='h5' fontWeight={600}>
+       {/* <Box sx={{float:'right'}} >
+  <Image src='src\assets\MuhammadSufyan_45102-5632695-1.png' height={520} width={500}></Image>
+  </Box> */}
+       <Typography  variant='h2'  textAlign={'center'} sx={{color:'whitesmoke'}} fontWeight={'bold'}>About Me</Typography><br/>
+      
+    <Stack direction={'row'}  spacing={10} marginTop={'4%'} px={{xs:2,md:5}}>
+      
+  
+   
+    
+    <Box width={{xs:'100%',md:600}}>
+    <Typography  sx={{color:'whitesmoke'}}    variant='h4' fontWeight={600}>
     Front-end React JS
     </Typography>
-    <Typography    variant='h5' fontWeight={600}>
+    <Typography   sx={{color:'whitesmoke'}}  variant='h4' fontWeight={600}>
     Developer with a
     </Typography>
-    <Typography    variant='h5' fontWeight={600}>
+    <Typography   sx={{color:'whitesmoke'}}  variant='h4' fontWeight={600}>
     Passion for User-
     </Typography>
-    <Typography    variant='h5' fontWeight={600} gutterBottom>
+    <Typography   sx={{color:'whitesmoke'}}  variant='h4' fontWeight={600} gutterBottom>
     friendly Websites
     </Typography>
     <hr style={{width:'10%',color:'green',border:'2px solid green'}}/>
     
     <br/>
 
-    <Typography variant='body2' textAlign={'justify'} gutterBottom >
+    <Typography variant='body1' textAlign={'justify'} color={'white'} gutterBottom >
     I am a professional Front-end React JS Developer with a strong dedication to 
     crafting user-friendly websites. My expertise lies in creating seamless user
      experiences through the implementation of ReactJS. I have a deep passion for 
@@ -36,13 +43,15 @@ export default function Aboutme() {
      
     I ensure that all my projects are executed with precision and attention to detail.
     </Typography><br/>
-    <Button size='small'  variant='contained'>Contact Me</Button>
+    <Button sx={{ background: 'linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376)',borderRadius:'15px',fontWeight:'bold'}}  variant='contained'>Contact Me</Button>
     </Box>
    
-    </Stack><br/>
     
-  </Stack><br/>
+    
+ 
   
+  
+  </Stack>
   </div>
   )
 }

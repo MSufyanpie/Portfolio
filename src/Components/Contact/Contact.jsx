@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from '../Navbar/navbar'
+import NavBar from '../Common/Navbar/navbar'
 import { Button, FormControl, Stack, TextField, Typography } from '@mui/material'
 import { Form } from 'react-bootstrap'
 import { GitHub, Google, Instagram, LinkedIn, Send } from '@mui/icons-material'
@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <div>
       <Stack>
-     <Typography variant='h3' textAlign={'center'}>
+     <Typography variant='h3' textAlign={'center'} color={'whitesmoke'} fontWeight={'bold'}>
         Let's Make Something Great Together!
       </Typography>
       <hr style={{width:'20%',color:'green',border:'2px solid green',alignSelf:'center'}} /></Stack><br/>
@@ -22,7 +22,7 @@ export default function Contact() {
         <TextField multiline label='Message' />
         </Stack>
       </form> */}
-      <Stack m={'auto'} px={5} boxShadow={10} width={'50%'} sx={{backgroundColor:'#59ABE3'}}>
+      <Stack m={'auto'} px={5} boxShadow={10} width={{xs:'95%',md:'50%'}} sx={{backgroundColor:'#59ABE3'}}>
       <Form  
       action='https://formspree.io/f/xpzgrlor' method='POST'
        >
