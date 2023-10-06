@@ -14,7 +14,7 @@ export default function MuiNavbar() {
         }
     }
   return (
-   <AppBar sx={{backgroundColor:'white'}} >
+   <AppBar sx={{backgroundColor:'black'}} >
     <Toolbar   >
         <Typography sx={{flexGrow:1}}>
         <IconButton  >
@@ -30,14 +30,14 @@ export default function MuiNavbar() {
         onClick={()=>scrollToSection("#section1")}
         to={"/#section1"}
         >
-        <Button sx={{color:'black',fontWeight:'bold'}} >Home</Button></Link>
+        <Button sx={{color:'white',fontWeight:'bold'}} >Home</Button></Link>
 
           <Link  
           onClick={()=>scrollToSection("#section2")} 
           style={{textDecoration:'none'}}
           to={"/#section2"}
           >
-          <Button sx={{color:'black',fontWeight:'bold'}} >   About
+          <Button sx={{color:'white',fontWeight:'bold'}} >   About
           </Button></Link> 
 
           <Link 
@@ -45,7 +45,7 @@ export default function MuiNavbar() {
           onClick={()=>scrollToSection("#section3")} 
           to={"/#section3"}
           >
-            <Button sx={{color:'black',fontWeight:'bold'}} >Services</Button></Link> 
+            <Button sx={{color:'white',fontWeight:'bold'}} >Services</Button></Link> 
 
             
           <Link 
@@ -53,21 +53,21 @@ export default function MuiNavbar() {
           onClick={()=>scrollToSection("#section4")} 
           to={"/#section4"}
           >
-            <Button sx={{color:'black',fontWeight:'bold'}} >Skills</Button></Link> 
+            <Button sx={{color:'white',fontWeight:'bold'}} >Skills</Button></Link> 
 
            <Link style={{textDecoration:'none'}}
             onClick={()=>scrollToSection("#section5")} 
             to={"/#section5"} >
 
-           <Button sx={{color:'black',fontWeight:'bold'}}>Projects</Button></Link> 
+           <Button sx={{color:'white',fontWeight:'bold'}}>Projects</Button></Link> 
 
 
            <Link style={{textDecoration:'none'}}
             onClick={()=>scrollToSection("#section6")} 
             to={"/#section6"}
            >
-           <Button  sx={{color:'black',fontWeight:'bold'}} >Contact </Button></Link> 
-           <Button variant='contained' color='error' size='large' sx={{fontWeight:'bold',borderRadius:'50px'}}>Hire Me</Button>
+           <Button  sx={{color:'white',fontWeight:'bold'}} >Contact </Button></Link> 
+           <Button variant='contained'  size='large' sx={{fontWeight:'bold',borderRadius:'50px',backgroundColor:'#ffbd39'}}>Hire Me</Button>
 
            
            

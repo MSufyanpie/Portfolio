@@ -5,7 +5,7 @@ export default function ServicesDesign({id,image,title,description}) {
   return (
         <Grid item xs={12} sm={6} md={4}>
         <Card sx={{":hover":{
-          boxShadow:'1px 1px 1px 2px  white'
+          boxShadow:'1px 1px 1px 2px #ffbd39'
         }}} variant='outlined'
         >
             <CardMedia 
@@ -14,11 +14,11 @@ export default function ServicesDesign({id,image,title,description}) {
             
             />        
         
-        <CardContent sx={{backgroundColor:'#e9ecf2'}}>
-            <Typography variant='h5' gutterBottom fontWeight={'bold'}>
+        <CardContent sx={{backgroundColor:'#383831'}}>
+            <Typography variant='h5' gutterBottom fontWeight={'bold'} color={'#ffbd39'}>
              {title}
             </Typography><br/>
-            <Typography variant='body1'>
+            <Typography variant='body1' color={'white'} >
              {description}
             </Typography>
 

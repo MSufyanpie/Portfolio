@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../Common/Navbar/navbar'
-import { Box, Button, Stack, Typography } from '@mui/material'
+import { Box, Button, LinearProgress, Stack, Typography } from '@mui/material'
 import { Image } from 'react-bootstrap'
 
 
@@ -52,6 +52,7 @@ export default function Aboutme() {
   
   
   </Stack>
+ 
   </div>
   )
 }

@@ -8,22 +8,23 @@ export default class Description extends Component {
   render() {
     return (
       <Stack
-        px={{ xs: 4, md: 8 }}
+        px={{ xs: 4, md: 17 }}
         spacing={{ xs: 7, md: 35 }}
         direction={{ xs: "column", md: "row" }}
       >
-        <Box width={{ xs: "100%", md: "430px" }}>
+        <Box width={{ xs: "100%", md: "480px" }}>
           <Stack spacing={2} direction={"column"}>
-            <Typography variant="h3" sx={{ color: "whitesmoke" }}>
+            <Typography variant="h2" sx={{ color: "whitesmoke" }}>
               I'm
             </Typography>
-            <Typography variant="h2" fontWeight={"bold"} color={"white"}>
+            <Typography variant="h2" fontWeight={"bold"} color={"#ffbd39"}>
               Muhammad Sufyan
             </Typography>
+            <br/>
             <Typography
-              variant="body1"
+              variant="h6"
               gutterBottom
-              sx={{ color: "#0a91c7" }}
+              sx={{ color: "white" }}
               fontWeight={"bold"}
             >
               Professional React JS Developer with a strong interest in
@@ -31,18 +32,15 @@ export default class Description extends Component {
             </Typography>
           </Stack>
           <br />
-          <Stack direction={"row"} spacing={2}>
+          <Stack direction={"row"} spacing={2} marginTop={'1%'}>
             <Button
+            size="large"
               sx={{
                 fontWeight: "bold",
-                borderRadius: "15px",
-                ":hover": {
-                  opacity: "1",
-                  transition: "0.8s opacity ease-in-out",
-                },
-
-                background:
-                  "linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);",
+                borderRadius: "20px",
+                boxShadow:'1px 1px 1px solid white',
+                backgroundColor:'#ffbd39',
+                color:'black'
               }}
               variant="contained"
             >
@@ -50,15 +48,14 @@ export default class Description extends Component {
               About Me
             </Button>
             <Button
+            size="large"
               sx={{
                 borderRadius: "15px",
-                fontWeight: "bold",
-                color: "black",
-                backgroundColor: "white",
-                borderRadius: "15px",
-                background: "linear-gradient(90deg, #fcff9e 0%, #c67700 100%)",
-                animation:
-                  "gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards",
+                border:'1px solid white',
+                color: "white",
+                backgroundColor: "black",
+                
+              
               }}
               variant="contained"
             >

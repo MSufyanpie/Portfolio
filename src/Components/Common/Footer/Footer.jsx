@@ -5,7 +5,7 @@ import { Image } from 'react-bootstrap'
 
 export default function Footer() {
   return (
-    <Stack direction={'row'} sx={{backgroundColor:'black'}} py={3} px={3} >
+    <Stack direction={{xs:'column',md:'row'}} sx={{backgroundColor:'black'}} py={3} px={3} >
          <Typography flexGrow={0.5}  >
             
       <IconButton >

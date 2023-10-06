@@ -6,7 +6,9 @@ export default function SkillsDesign({id,icon,title,description}) {
   return (
     <div>
     <Card variant='outlined' 
-    sx={{height:'40vh',width:'100%'}}
+    sx={{height:'33vh',width:'100%',backgroundColor:'#383831',":hover":{
+      backgroundColor:'maroon',color:'black'
+    }}}
     
     
     >
@@ -14,13 +16,19 @@ export default function SkillsDesign({id,icon,title,description}) {
            
         
         <CardContent sx={{padding:'0'}}>
-        <Stack direction={'column'} spacing={1} sx={{backgroundColor:'#a63243'}} py={1}>
-       <Typography variant='h4' color={'gold'} textAlign={'center'} > {icon}</Typography>
-        <Typography variant='h5'  color={'gold'} textAlign={'center'} gutterBottom>
+        {/* <Stack direction={'column'} spacing={1} sx={{backgroundColor:'#a63243'}} py={1}> */}
+       <Typography variant='h2' color={'#ffbd39'} textAlign={'center'} > {icon}</Typography>
+       
+            {/* </Stack> */}
+            <br/>
+            <br/>
+            <Stack>
+            <Typography variant='h6'  color={'white'} textAlign={'center'} fontWeight={'bold'}>
             {title}
-            </Typography></Stack><br/>
-            <Typography  variant='body2' textAlign={'justify'} px={3} fontWeight={'bold'} >
-            {description}</Typography>
+          
+            </Typography>
+            <hr style={{color:'#ffbd39',border:'1px solid #ffbd39',width:'20%',alignSelf:'center'}}/>
+            </Stack>
         </CardContent>
         
     </Card><br/>
