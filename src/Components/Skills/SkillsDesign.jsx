@@ -1,13 +1,14 @@
-import { Card, CardContent, CardHeader, Stack, Typography } from '@mui/material'
+import { Card, CardContent, CardHeader, LinearProgress, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { Image } from 'react-bootstrap'
 
-export default function SkillsDesign({id,icon,title,description}) {
+export default function SkillsDesign({id,icon,title,progress}) {
   return (
     <div>
     <Card variant='outlined' 
     sx={{height:'33vh',width:'100%',backgroundColor:'#383831',":hover":{
-      backgroundColor:'maroon',color:'black'
+      backgroundColor:'maroon',animation:'mover 1s infinite  alternate'
+      
     }}}
     
     
@@ -28,6 +29,11 @@ export default function SkillsDesign({id,icon,title,description}) {
           
             </Typography>
             <hr style={{color:'#ffbd39',border:'1px solid #ffbd39',width:'20%',alignSelf:'center'}}/>
+            <Stack direction={'row'}><LinearProgress sx={{width:'75%',margin:'auto',height:'1.5vh',borderRadius:'10px'}} variant='buffer' value={progress} color='error'></LinearProgress>
+            <Typography variant='h6' marginRight={'5%'} color={'#ffbd39'} fontWeight={'bold'}>
+              {progress+'%'}
+            </Typography>
+            </Stack>
             </Stack>
         </CardContent>
         

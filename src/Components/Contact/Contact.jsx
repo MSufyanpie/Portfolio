@@ -5,6 +5,7 @@ import { Form } from 'react-bootstrap'
 import { GitHub, Google, Instagram, LinkedIn, Send } from '@mui/icons-material'
 import {RxReset} from 'react-icons/rx'
 import {GrPowerReset} from 'react-icons/gr'
+import { ContactIcons } from './ContactIcons'
 export default function Contact() {
   return (
     <div>
@@ -22,7 +23,8 @@ export default function Contact() {
         <TextField multiline label='Message' />
         </Stack>
       </form> */}
-      <Stack m={'auto'} px={5} boxShadow={10} width={{xs:'95%',md:'50%'}} sx={{backgroundColor:'#59ABE3'}}>
+      <ContactIcons/><br/>
+      <Stack m={'auto'} px={5} boxShadow={10} width={{xs:'95%',md:'50%'}} sx={{backgroundColor:'#59ABE3'}} marginTop={'1%'}>
       <Form  
       action='https://formspree.io/f/xpzgrlor' method='POST'
        >

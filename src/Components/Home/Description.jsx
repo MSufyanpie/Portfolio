@@ -64,6 +64,7 @@ export default class Description extends Component {
           </Stack>
         </Box>
         <Image
+        className="img"
           src="src\assets\home-img.png"
           height={300}
           width={{ xs: 300, md: 500 }}

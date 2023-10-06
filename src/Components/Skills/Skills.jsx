@@ -10,32 +10,32 @@ export default function Skills() {
     {
       icon:<DiHtml5/>,
       title:'HTML5',
-      description:'HTML is the backbone of web development. I utilize it to craft the fundamental structure and content of web pages, ensuring accessibility and semantic markup.'
+      progress:90
     },
     {
       icon:<DiCss3Full/>,
            title:'CSS3',
-      description:'CSS empowers me to style and design web content with precision. I use it to create visually appealing and responsive layouts, enhancing user experiences.'
+      progress:90
     },
     {
       icon:<DiBootstrap/>,
       title:'BOOTSTRAP',
-      description:'Leveraging Bootstraps CSS framework, I expedite web development by seamlessly integrating pre-built components and responsive grids, resulting in efficient and mobile-friendly designs.'
+      progress:80
     },
     {
       icon:<DiJavascript/>,
       title:'JAVASCRIPT',
-      description:'JavaScript breathes life into web applications. I employ it to add interactivity and dynamic behavior, enhancing user engagement and functionality.'
+      progress:80
     },
     {
       icon:<DiReact/>,
       title:'REACT',
-      description:'React is my go-to library for building interactive user interfaces. I harness its component-based architecture to create reusable UI elements and manage complex state seamlessly.'
+      progress:80
     },
     {
       icon:<SiTypescript/>,
       title:'TYPESCRIPT',
-      description:'TypeScript elevates my JavaScript development by adding static typing and enhanced tooling. It helps me catch errors early and write more robust, maintainable code.'
+      progress:75
     }
   ]
   return (
@@ -60,7 +60,7 @@ export default function Skills() {
         <SkillsDesign
         icon={data.icon}
         title={data.title}
-        description={data.description}
+        progress={data.progress}
         />
         </Grid>
       )

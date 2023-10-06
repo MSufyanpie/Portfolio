@@ -2,14 +2,14 @@ import React from 'react'
 import NavBar from '../Common/Navbar/navbar'
 import { Box, Button, LinearProgress, Stack, Typography } from '@mui/material'
 import { Image } from 'react-bootstrap'
-
+import './About.css'
 
 
 export default function Aboutme() {
   return (
-    <div>
-       {/* <Box sx={{float:'right'}} >
-  <Image src='src\assets\MuhammadSufyan_45102-5632695-1.png' height={520} width={500}></Image>
+    <div className='image'>
+       {/* <Box sx={{float:'right'}} marginBottom={'20%'}>
+  <Image src='src\assets\MuhammadSufyan_45102-5632695-1.png' height={'700vh'} width={500}></Image>
   </Box> */}
        <Typography  variant='h2'  textAlign={'center'} sx={{color:'whitesmoke'}} fontWeight={'bold'}>About Me</Typography><br/>
       
@@ -18,7 +18,7 @@ export default function Aboutme() {
   
    
     
-    <Box width={{xs:'100%',md:600}}>
+    <Box width={{xs:'100%',md:600}} px={10}>
     <Typography  sx={{color:'whitesmoke'}}    variant='h4' fontWeight={600}>
     Front-end React JS
     </Typography>
