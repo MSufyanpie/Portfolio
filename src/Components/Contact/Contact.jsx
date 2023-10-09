@@ -43,16 +43,16 @@ export default function Contact() {
         m={"auto"}
         boxShadow={10}
         width={{ xs: "95%", md: "60%" }}
-        marginTop={"3%"}
+        marginTop={"1%"}
       >
         <Stack direction={"row"}>
-          <Box width={"40%"} sx={{ backgroundColor: "#242320" }}>
+          <Box width={"35%"} sx={{ backgroundColor: "#1c1b18" }}>
             <Image
-              style={{ height: "480px", width: "400px", marginTop: "6%" }}
+              style={{ height: "470px", width: "365px", marginTop: "16%" }}
               src="src\assets\sufyan.png"
             ></Image>
           </Box>
-          <Box width={"60%"} sx={{ backgroundColor: "white" }}>
+          <Box width={"65%"} sx={{ backgroundColor: "#edebe6" }}>
             <Form action="https://formspree.io/f/xpzgrlor" method="POST">
               <Stack px={2} direction={"column"} spacing={4} marginTop={"2%"}>
                 <Typography
@@ -71,7 +71,7 @@ export default function Contact() {
                   <LinkedIn sx={{ color: "blue" }} />
                 </Stack>
                 <TextField
-                  sx={{ border: "2px solid white", borderRadius: "10px" }}
+                  sx={{ borderRadius: "10px" }}
                   name="name"
                   size="small"
                   label="Name"
@@ -79,7 +79,7 @@ export default function Contact() {
                 />
                 <TextField
                   sx={{
-                    border: "2px solid white",
+                   
                     borderRadius: "10px",
                     color: "white",
                   }}
@@ -90,14 +90,14 @@ export default function Contact() {
                   required
                 />
                 <TextField
-                  sx={{ border: "2px solid white", borderRadius: "10px" }}
+                  sx={{ borderRadius: "10px" }}
                   name="subject"
                   size="small"
                   label="Subject"
                   required
                 />
                 <TextField
-                  sx={{ border: "2px solid white", borderRadius: "10px" }}
+                  sx={{ borderRadius: "10px" }}
                   name="message"
                   multiline
                   maxRows={4}
@@ -148,7 +148,7 @@ export default function Contact() {
         </Stack>
       </Box>
 
-      <br />
+      <br /><br />
     </div>
   );
 }
