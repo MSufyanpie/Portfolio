@@ -78,11 +78,14 @@ export default function Footer() {
         <Box>
         <Typography gutterBottom variant='h5' fontWeight={'bold'} color={'white'}>HAVE QUESTIONS?</Typography><br/>
         <Stack direction={'column'} spacing={5}>
-        <Typography gutterBottom color={'wheat'} variant='h6' ><Call/> 03364019914</Typography>
-        <Typography color={'wheat'} variant='h6' ><Mail/> sufi.sufyan121@gmail.com</Typography>
+        <Typography gutterBottom color={'#b0ada4'} variant='h6' ><Call/> 03364019914</Typography>
+        <Typography color={'#b0ada4'} variant='h6' ><Mail/> sufi.sufyan121@gmail.com</Typography>
         </Stack>
         </Box>
       </Stack><br/>
+      <Typography marginTop={'3%'} color={'#69706b'} variant='h6'  textAlign={'center'}>
+      Copyright © 2023 | Muhammad Sufyan | All rights reserved | This portfolio is made with ❤️ by Muhammad Sufyan
+      </Typography>
     </Box>
        
   )
