@@ -1,0 +1,10 @@
+.bg-img{
+     
+    background-image: url('https://technext.github.io/clark/images/bg_1.jpg');
+    background-size: cover;
+    height: 80vh;
+    opacity: 100;
+    margin-top: 3%;
+  
+  
+}

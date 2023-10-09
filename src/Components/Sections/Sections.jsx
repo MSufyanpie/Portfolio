@@ -6,6 +6,7 @@ import Skills from '../Skills/Skills'
 import Projects from '../Projects/Projects'
 import Contact from '../Contact/Contact'
 import Footer from '../Common/Footer/Footer'
+import { HireMe } from '../Hire/HireMe'
 
 export default function Sections() {
   return (
@@ -24,7 +25,10 @@ export default function Sections() {
       </section>
       <section id="section5" >
         <Projects></Projects>
-      </section><br/>
+      </section><br/><br/>
+      <section>
+      <HireMe/>  
+      </section><br/><br/>
       <section id="section6" >
        <Contact></Contact>
       </section>
