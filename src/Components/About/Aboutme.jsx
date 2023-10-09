@@ -43,7 +43,7 @@ export default function Aboutme() {
      
     I ensure that all my projects are executed with precision and attention to detail.
     </Typography><br/>
-    <Button sx={{ background: 'linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376)',borderRadius:'15px',fontWeight:'bold'}}  variant='contained'>Contact Me</Button>
+    <Button  sx={{padding:'0.8rem',borderRadius:'25px',backgroundColor:'#03701b',textAlign:'center',width:'30%'}}  variant='contained'>Contact</Button>
     </Box>
     <Box paddingBottom={'5%'}>
     <Image  style={{height:'530px',width:'450px'}} src='src\assets\sufyan.png' ></Image></Box>
