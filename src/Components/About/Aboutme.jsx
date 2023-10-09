@@ -8,12 +8,12 @@ import './About.css'
 export default function Aboutme() {
   return (
     <div className='image'>
-       {/* <Box sx={{float:'right'}} marginBottom={'20%'}>
-  <Image src='src\assets\MuhammadSufyan_45102-5632695-1.png' height={'700vh'} width={500}></Image>
-  </Box> */}
-       <Typography  variant='h2'  textAlign={'center'} sx={{color:'whitesmoke'}} fontWeight={'bold'}>About Me</Typography><br/>
       
-    <Stack direction={'row'}  spacing={10} marginTop={'4%'} px={{xs:2,md:5}}>
+       <Typography  variant='h2'  textAlign={'center'} sx={{color:'whitesmoke'}} fontWeight={'bold'}>About Me</Typography><br/>
+       {/* <Box sx={{float:'right'}} marginBottom={'20%'}> */}
+  
+  {/* </Box> */}
+    <Stack direction={'row'}  spacing={45} marginTop={'4%'} px={{xs:2,md:10}}>
       
   
    
@@ -45,7 +45,8 @@ export default function Aboutme() {
     </Typography><br/>
     <Button sx={{ background: 'linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376)',borderRadius:'15px',fontWeight:'bold'}}  variant='contained'>Contact Me</Button>
     </Box>
-   
+    <Box paddingBottom={'5%'}>
+    <Image  style={{height:'530px',width:'450px'}} src='src\assets\sufyan.png' ></Image></Box>
     
     
  

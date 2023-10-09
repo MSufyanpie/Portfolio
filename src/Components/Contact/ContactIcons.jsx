@@ -4,7 +4,7 @@ import React from 'react'
 
 export const ContactIcons = () => {
   return (
-    <Box width={'50%'} m={'auto'}>
+    <Box width={'50%'} m={'auto'} paddingLeft={'3%'}>
     <Stack direction={'row'} spacing={11}>
         <Box>
         <Typography textAlign={'center'} >
@@ -42,7 +42,7 @@ export const ContactIcons = () => {
           Muhammad Sufyan
         </Typography>
         </Box>
-    </Stack>    
+    </Stack>    <br/>
 
     </Box>
   )
