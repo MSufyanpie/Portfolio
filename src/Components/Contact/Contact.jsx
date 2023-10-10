@@ -45,14 +45,14 @@ export default function Contact() {
         width={{ xs: "95%", md: "60%" }}
         marginTop={"1%"}
       >
-        <Stack direction={"row"}>
-          <Box width={"40%"} sx={{ backgroundColor: "#1c1b18" }}>
+        <Stack direction={{xs:'column',md:"row"}}>
+          <Box width={{xs:'100%',md:"40%"}} sx={{ backgroundColor: "#1c1b18" }}>
             <Image
               style={{ height: "450px", width: "350px", marginTop: "28%"}}
               src="src\assets\sufyan.png"
             ></Image>
           </Box>
-          <Box width={"60%"} sx={{ backgroundColor: "#edebe6" }}>
+          <Box width={{xs:'100%',md:"60%"}} sx={{ backgroundColor: "#edebe6" }}>
             <Form action="https://formspree.io/f/xpzgrlor" method="POST">
               <Stack px={2} direction={"column"} spacing={4} marginTop={"2%"}>
                 <Typography

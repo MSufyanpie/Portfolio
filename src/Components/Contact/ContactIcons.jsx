@@ -5,7 +5,7 @@ import React from 'react'
 export const ContactIcons = () => {
   return (
     <Box width={'50%'} m={'auto'} paddingLeft={'1%'}>
-    <Stack direction={'row'} spacing={12}>
+    <Stack direction={{xs:'column',md:'row'}} spacing={12}>
         <Box>
         <Typography  textAlign={'center'} >
         <IconButton size='large' sx={{backgroundColor:'#383831',height:'12vh',width:'12vh',}}>

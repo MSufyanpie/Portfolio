@@ -4,10 +4,10 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 export const HireMe = () => {
   return (
     <div className="bg-img">
-      <Box m={"auto"} width={"55%"}>
+      <Box m={"auto"} width={{xs:'100%',md:"55%"}}>
         <Stack direction={"row"} spacing={1.5} paddingTop={"14%"}>
           <Typography
-            fontSize={"54px"}
+            fontSize={{xs:'34',md:"54px"}}
             color={"white"}
             fontWeight={"bold"}
             variant="h4"
@@ -16,7 +16,7 @@ export const HireMe = () => {
             I'm{" "}
           </Typography>
           <Typography
-            fontSize={"54px"}
+            fontSize={{xs:'34',md:"54px"}}
             color={"#ffbd39"}
             fontWeight={"bold"}
             variant="h4"
@@ -26,10 +26,10 @@ export const HireMe = () => {
           </Typography>
           <Typography
             gutterBottom
-            fontSize={"54px"}
+            fontSize={{xs:'54',md:"54px"}}
             color={"white"}
             fontWeight={"bold"}
-            variant="h4"
+            variant={{xs:'h1',md:"h4"}}
             textAlign={"center"}
           >
             for freelancing

@@ -1,11 +1,13 @@
 import React from 'react'
 import NavBar from '../Common/Navbar/navbar'
-import { Box, Button, LinearProgress, Stack, Typography } from '@mui/material'
+import { Box, Button, LinearProgress, Stack, Typography, useMediaQuery, useTheme } from '@mui/material'
 import { Image } from 'react-bootstrap'
 import './About.css'
 
 
 export default function Aboutme() {
+  const theme=useTheme()
+  const isMobile=useMediaQuery(theme.breakpoints.down('md'))
   return (
     <div className='image'>
       
@@ -45,8 +47,9 @@ export default function Aboutme() {
     </Typography><br/>
     <Button  sx={{padding:'0.3rem',borderRadius:'25px',backgroundColor:'#03701b',textAlign:'center',width:'40%'}}  variant='contained'>Contact</Button>
     </Box>
-    <Box paddingBottom={'5%'}>
-    <Image  style={{height:'530px',width:'450px'}} src='src\assets\sufyan.png' ></Image></Box>
+    {isMobile?(<></>):(<><Box paddingBottom={'5%'}>
+    <Image  style={{height:'530px',width:'450px'}} src='src\assets\sufyan.png' ></Image></Box></>)}
+    
     
     
  
