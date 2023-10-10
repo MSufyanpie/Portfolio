@@ -12,7 +12,7 @@ import { HaveQuestions } from "./HaveQuestions";
 export default function Footer() {
   return (
     <Box px={16} marginTop={"5%"}>
-      <Stack direction={"row"} spacing={20}>
+      <Stack direction={{xs:'column',md:"row"}} spacing={20}>
         <About />
         <Links />
         <Services />

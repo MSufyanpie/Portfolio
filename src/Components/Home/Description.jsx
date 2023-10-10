@@ -4,8 +4,14 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 
 import { Image } from "react-bootstrap";
 
-export default class Description extends Component {
-  render() {
+export default function Description()  {
+  const scrollToSection = (sectionId) => {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
     return (
       <Stack
         px={{ xs: 4, md: 17 }}
@@ -43,13 +49,18 @@ export default class Description extends Component {
           <br />
           <Stack direction={"row"} spacing={2} marginTop={'1%'}>
             <Button
+            onClick={()=>scrollToSection("#section2")}
             size="large"
               sx={{
                 fontWeight: "bold",
-                borderRadius: "20px",
+                borderRadius: "25px",
                 boxShadow:'1px 1px 1px solid white',
                 backgroundColor:'#ffbd39',
-                color:'black'
+                color:'black',
+                ":hover":{
+                  backgroundColor:'#cf8b02'
+                }
+                
               }}
               variant="contained"
             >
@@ -57,13 +68,17 @@ export default class Description extends Component {
               About Me
             </Button>
             <Button
+            onClick={()=>scrollToSection("#section5")}
             size="large"
               sx={{
-                borderRadius: "15px",
+                borderRadius: "25px",
                 border:'1px solid white',
                 color: "white",
                 backgroundColor: "black",
-                
+                fontWeight:'bold',
+                ":hover":{
+                  backgroundColor:'grey'
+                }
               
               }}
               variant="contained"
@@ -81,5 +96,5 @@ export default class Description extends Component {
         <br />
       </Stack>
     );
-  }
+  
 }

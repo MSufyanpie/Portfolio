@@ -37,12 +37,14 @@ export default function Services() {
       px={10}  >
       {services.map((data,index)=>{
         return(
+          
           <ServicesDesign 
           id={index}
           image={data.image}
           title={data.title}
           description={data.description}
           />
+          
 
           
         )

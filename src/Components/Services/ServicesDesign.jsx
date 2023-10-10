@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ServicesDesign({id,image,title,description}) {
   return (
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid key={id} item xs={12} sm={6} md={4}>
         <Card sx={{":hover":{
           boxShadow:'1px 1px 1px 2px #ffbd39'
         }}} variant='outlined'
