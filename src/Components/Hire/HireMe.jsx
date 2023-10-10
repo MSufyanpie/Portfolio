@@ -7,38 +7,38 @@ export const HireMe = () => {
       <Box m={"auto"} width={"55%"}>
         <Stack direction={"row"} spacing={1.5} paddingTop={"14%"}>
           <Typography
-            fontSize={"70px"}
+            fontSize={"54px"}
             color={"white"}
             fontWeight={"bold"}
-            variant="h2"
+            variant="h4"
             textAlign={"center"}
           >
             I'm{" "}
           </Typography>
           <Typography
-            fontSize={"70px"}
+            fontSize={"54px"}
             color={"#ffbd39"}
             fontWeight={"bold"}
-            variant="h2"
+            variant="h4"
             textAlign={"center"}
           >
             Availaible
           </Typography>
           <Typography
             gutterBottom
-            fontSize={"70px"}
+            fontSize={"54px"}
             color={"white"}
             fontWeight={"bold"}
-            variant="h2"
+            variant="h4"
             textAlign={"center"}
           >
             for freelancing
           </Typography>
         </Stack>
         <br />
-        <Typography fontWeight={'bold'} color={'#b5b1a7'} variant="h6" textAlign={'center'}>
+        <Typography fontWeight={'bold'} color={'#b5b1a7'} variant="body1" textAlign={'center'}>
         I thrive on creativity and innovation. Let's connect and explore exciting opportunities
-        </Typography>
+        </Typography><br/>
         <Typography marginTop={"10%"} textAlign={"center"}>
           <Button
             sx={{

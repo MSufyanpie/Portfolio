@@ -18,7 +18,17 @@ export default function MuiNavbar() {
     <Toolbar   >
         <Typography sx={{flexGrow:1}}>
         <IconButton  >
-            <Image  src='src\assets\mylogo.png' height={'90px'} width={'200px'}></Image>
+            {/* <Image  src='src\assets\mylogo.png' height={'90px'} width={'200px'}></Image> */}
+        <Typography
+        sx={{  background: "linear-gradient(to right bottom, #fcc658, #ab7303)",
+        backgroundClip: "text",
+        WebkitBackgroundClip: "text",
+        color: "transparent",
+        fontSize:'35px',
+        fontFamily:'Monospace'
+      }}
+      
+        fontWeight={1000} variant='h1' > MUHAMMAD SUFYAN</Typography>
         </IconButton>
         </Typography>
         
@@ -67,7 +77,7 @@ export default function MuiNavbar() {
             to={"/#section6"}
            >
            <Button  sx={{color:'white',fontWeight:'bold'}} >Contact </Button></Link> 
-           <Button variant='contained'  size='large' sx={{fontWeight:'bold',borderRadius:'50px',backgroundColor:'#ffbd39'}}>Hire Me</Button>
+          
 
            
            

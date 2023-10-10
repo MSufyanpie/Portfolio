@@ -17,8 +17,17 @@ export default class Description extends Component {
             <Typography variant="h2" sx={{ color: "whitesmoke" }}>
               I'm
             </Typography>
-            <Typography variant="h2" fontWeight={"bold"} color={"#ffbd39"}>
-              Muhammad Sufyan
+            <Typography variant="h3" fontWeight={"1000"} 
+            // color={"#ffbd39"}
+            fontFamily={'sans-serif'} fontSize={'60px'}
+            sx={{
+              background: "linear-gradient(to right , #462523 0,#cb9b51 4%,#f6e27a 45%,#f6f2c0 50%,#f6e27a 55%,#cb9b51 78%, #462523 100%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              color: "transparent",
+            }}
+            >
+              MUHAMMAD SUFYAN
             </Typography>
             <br/>
             <Typography

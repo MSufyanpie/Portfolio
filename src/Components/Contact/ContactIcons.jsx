@@ -4,15 +4,15 @@ import React from 'react'
 
 export const ContactIcons = () => {
   return (
-    <Box width={'50%'} m={'auto'} paddingLeft={'3%'}>
-    <Stack direction={'row'} spacing={11}>
+    <Box width={'50%'} m={'auto'} paddingLeft={'1%'}>
+    <Stack direction={'row'} spacing={12}>
         <Box>
-        <Typography textAlign={'center'} >
+        <Typography  textAlign={'center'} >
         <IconButton size='large' sx={{backgroundColor:'#383831',height:'12vh',width:'12vh',}}>
          <Phone sx={{color:'#ffbd39'}} fontSize='large'/>   
         </IconButton></Typography>
-        <Typography textAlign={'center'} marginTop={'10%'} variant='h6' color={'white'}>
-            Contact Number
+        <Typography textAlign={'center'} marginTop={'15%'} variant='h6' color={'white'}>
+            Contact NO
         </Typography><br/>
         <Typography  textAlign={'center'} variant='h6' color={'white'}>
             03364019914
@@ -35,7 +35,7 @@ export const ContactIcons = () => {
         <IconButton size='large' sx={{backgroundColor:'#383831',height:'12vh',width:'12vh',}}>
          <LinkedIn sx={{color:'#ffbd39'}} fontSize='large'/>   
         </IconButton></Typography>
-        <Typography textAlign={'center'} marginTop={'10%'} variant='h6' color={'white'} >
+        <Typography textAlign={'center'} marginTop={'15%'} variant='h6' color={'white'} >
             LinkedIn
         </Typography><br/>
         <Typography variant='h6' color={'white'}>

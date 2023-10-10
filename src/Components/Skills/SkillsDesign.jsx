@@ -6,7 +6,7 @@ export default function SkillsDesign({id,icon,title,progress}) {
   return (
     <div>
     <Card variant='outlined' 
-    sx={{height:'33vh',width:'100%',backgroundColor:'#383831',":hover":{
+    sx={{height:'37vh',width:'100%',backgroundColor:'#383831',":hover":{
       backgroundColor:'maroon',animation:'mover 1s infinite  alternate'
       
     }}}

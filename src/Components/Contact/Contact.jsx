@@ -46,13 +46,13 @@ export default function Contact() {
         marginTop={"1%"}
       >
         <Stack direction={"row"}>
-          <Box width={"35%"} sx={{ backgroundColor: "#1c1b18" }}>
+          <Box width={"40%"} sx={{ backgroundColor: "#1c1b18" }}>
             <Image
-              style={{ height: "470px", width: "365px", marginTop: "28%" }}
+              style={{ height: "450px", width: "350px", marginTop: "28%"}}
               src="src\assets\sufyan.png"
             ></Image>
           </Box>
-          <Box width={"65%"} sx={{ backgroundColor: "#edebe6" }}>
+          <Box width={"60%"} sx={{ backgroundColor: "#edebe6" }}>
             <Form action="https://formspree.io/f/xpzgrlor" method="POST">
               <Stack px={2} direction={"column"} spacing={4} marginTop={"2%"}>
                 <Typography

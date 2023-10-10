@@ -18,7 +18,7 @@ export default function Aboutme() {
   
    
     
-    <Box width={{xs:'100%',md:600}} px={10}>
+    <Box width={{xs:'100%',md:740}} px={4}>
     <Typography  sx={{color:'whitesmoke'}}    variant='h4' fontWeight={600}>
     Front-end React JS
     </Typography>
